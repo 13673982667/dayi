@@ -1,0 +1,333 @@
+[ 2018-08-04T10:44:40+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php//api/Version/getVersion?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2F%2Fapi%2FVersion%2FgetVersion
+[ log ] 192.168.0.110/api.php//api/Version/getVersion?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2F%2Fapi%2FVersion%2FgetVersion [运行时间：0.422553s][吞吐率：2.37req/s] [内存消耗：2,503.07kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Version',
+    2 => 'getVersion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php//api/Version/getVersion',
+)
+[ info ] [ RUN ] app\api\controller\Version->getVersion[ D:\phpStudy\WWW\APP\application\api\controller\Version.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011501s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_version` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_version` ORDER BY id desc LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:44:41+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/index/index?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2Findex%2Findex
+[ log ] 192.168.0.110/api.php/api/index/index?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2Findex%2Findex [运行时间：0.344044s][吞吐率：2.91req/s] [内存消耗：2,543.37kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/index/index',
+)
+[ info ] [ RUN ] app\api\controller\Index->index[ D:\phpStudy\WWW\APP\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_shops` [ RunTime:0.230529s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_shops` WHERE  `img` <> '' [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:44:41+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Kefu/updateUserArr?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FKefu%2FupdateUserArr&kf_id=14
+[ log ] 192.168.0.110/api.php/api/Kefu/updateUserArr?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FKefu%2FupdateUserArr&kf_id=14 [运行时间：0.466559s][吞吐率：2.14req/s] [内存消耗：2,552.69kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Kefu',
+    2 => 'updateUserArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Kefu/updateUserArr',
+  'kf_id' => '14',
+)
+[ info ] [ RUN ] app\api\controller\Kefu->updateUserArr[ D:\phpStudy\WWW\APP\application\api\controller\Kefu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_users` [ RunTime:0.231529s ]
+[ sql ] [ SQL ] SELECT `nickname`,`im_identifier`,`pic`,`id`,`phone` FROM `kq_users` [ RunTime:0.004501s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:44:41+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Users/getUserInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FUsers%2FgetUserInfo&uId=14
+[ log ] 192.168.0.110/api.php/api/Users/getUserInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FUsers%2FgetUserInfo&uId=14 [运行时间：0.270034s][吞吐率：3.70req/s] [内存消耗：2,582.58kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Users',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Users/getUserInfo',
+  'uId' => '14',
+)
+[ info ] [ RUN ] app\api\controller\Users->getUserInfo[ D:\phpStudy\WWW\APP\application\api\controller\Users.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_users` [ RunTime:0.152019s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_users` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.004501s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_users` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:44:41+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Article/getNewsList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FArticle%2FgetNewsList&page=1&size=10
+[ log ] 192.168.0.110/api.php/api/Article/getNewsList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FArticle%2FgetNewsList&page=1&size=10 [运行时间：0.278036s][吞吐率：3.60req/s] [内存消耗：2,610.88kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Article',
+    2 => 'getNewsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Article/getNewsList',
+  'page' => '1',
+  'size' => '10',
+)
+[ info ] [ RUN ] app\api\controller\Article->getNewsList[ D:\phpStudy\WWW\APP\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_article` [ RunTime:0.087011s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_article` WHERE  `type` = 0 LIMIT 0,10 [ RunTime:0.018502s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:44:41+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Im/userLoginInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FuserLoginInfo&uid=14
+[ log ] 192.168.0.110/api.php/api/Im/userLoginInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FuserLoginInfo&uid=14 [运行时间：0.764097s][吞吐率：1.31req/s] [内存消耗：2,877.04kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Im',
+    2 => 'userLoginInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Im/userLoginInfo',
+  'uid' => '14',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Im->userLoginInfo[ D:\phpStudy\WWW\APP\application\api\controller\Im.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_users` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`im_identifier`,`im_pwd`,`pic`,`phone` FROM `kq_users` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:46:42+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14
+[ log ] 192.168.0.110/api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14 [运行时间：0.120016s][吞吐率：8.33req/s] [内存消耗：2,597.76kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'DoctorTime',
+    2 => 'getYsDoctorList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/DoctorTime/getYsDoctorList',
+  'uId' => '14',
+)
+[ info ] [ RUN ] app\api\controller\Doctortime->getYsDoctorList[ D:\phpStudy\WWW\APP\application\api\controller\Doctortime.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_doctor_time` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT `u`.`nickname`,`u`.`phone`,`t`.* FROM `kq_doctor_time` `t` LEFT JOIN `kq_users` `u` ON `t`.`uid`=`u`.`id` WHERE  `yid` = 14 LIMIT 0,10 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:46:44+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14
+[ log ] 192.168.0.110/api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14 [运行时间：0.035505s][吞吐率：28.17req/s] [内存消耗：2,597.76kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'DoctorTime',
+    2 => 'getYsDoctorList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/DoctorTime/getYsDoctorList',
+  'uId' => '14',
+)
+[ info ] [ RUN ] app\api\controller\Doctortime->getYsDoctorList[ D:\phpStudy\WWW\APP\application\api\controller\Doctortime.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_doctor_time` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `u`.`nickname`,`u`.`phone`,`t`.* FROM `kq_doctor_time` `t` LEFT JOIN `kq_users` `u` ON `t`.`uid`=`u`.`id` WHERE  `yid` = 14 LIMIT 0,10 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:46:52+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/DoctorTime/getYsOkList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsOkList&uId=14&page=1&size=1
+[ log ] 192.168.0.110/api.php/api/DoctorTime/getYsOkList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsOkList&uId=14&page=1&size=1 [运行时间：0.034504s][吞吐率：28.98req/s] [内存消耗：2,597.83kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'DoctorTime',
+    2 => 'getYsOkList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/DoctorTime/getYsOkList',
+  'uId' => '14',
+  'page' => '1',
+  'size' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Doctortime->getYsOkList[ D:\phpStudy\WWW\APP\application\api\controller\Doctortime.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_doctor_time` [ RunTime:0.004501s ]
+[ sql ] [ SQL ] SELECT `u`.`nickname`,`u`.`phone`,`t`.* FROM `kq_doctor_time` `t` LEFT JOIN `kq_users` `u` ON `t`.`uid`=`u`.`id` WHERE  `yid` = 14  AND `t`.`status` = 2 LIMIT 0,1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-04T10:46:57+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14
+[ log ] 192.168.0.110/api.php/api/DoctorTime/getYsDoctorList?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FDoctorTime%2FgetYsDoctorList&uId=14 [运行时间：0.035005s][吞吐率：28.57req/s] [内存消耗：2,597.76kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'DoctorTime',
+    2 => 'getYsDoctorList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; sm-j200g Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Html5Plus/1.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/DoctorTime/getYsDoctorList',
+  'uId' => '14',
+)
+[ info ] [ RUN ] app\api\controller\Doctortime->getYsDoctorList[ D:\phpStudy\WWW\APP\application\api\controller\Doctortime.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_doctor_time` [ RunTime:0.005500s ]
+[ sql ] [ SQL ] SELECT `u`.`nickname`,`u`.`phone`,`t`.* FROM `kq_doctor_time` `t` LEFT JOIN `kq_users` `u` ON `t`.`uid`=`u`.`id` WHERE  `yid` = 14 LIMIT 0,10 [ RunTime:0.000501s ]
+
+---------------------------------------------------------------

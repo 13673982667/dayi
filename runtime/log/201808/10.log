@@ -1,0 +1,99 @@
+[ 2018-08-10T16:11:12+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Im/userLoginInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FuserLoginInfo&uid=14
+[ log ] 192.168.0.110/api.php/api/Im/userLoginInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FuserLoginInfo&uid=14 [运行时间：0.718591s][吞吐率：1.39req/s] [内存消耗：3,289.25kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Im',
+    2 => 'userLoginInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Im/userLoginInfo',
+  'uid' => '14',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Im->userLoginInfo[ D:\phpStudy\WWW\APP\application\api\controller\Im.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_users` [ RunTime:0.060508s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`im_identifier`,`im_pwd`,`pic`,`phone` FROM `kq_users` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-10T16:11:13+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Users/getUserInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FUsers%2FgetUserInfo&uId=12
+[ log ] 192.168.0.110/api.php/api/Users/getUserInfo?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FUsers%2FgetUserInfo&uId=12 [运行时间：0.083510s][吞吐率：11.97req/s] [内存消耗：2,950.59kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Users',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Users/getUserInfo',
+  'uId' => '12',
+)
+[ info ] [ RUN ] app\api\controller\Users->getUserInfo[ D:\phpStudy\WWW\APP\application\api\controller\Users.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_users` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_users` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `kq_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2018-08-10T16:11:14+08:00 ] 192.168.0.110 192.168.0.110 GET /api.php/api/Im/addIdentifier?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FaddIdentifier&identifier=im_13673982666&Toidentifier=im_13673982667
+[ log ] 192.168.0.110/api.php/api/Im/addIdentifier?url=http%3A%2F%2F192.168.0.110%2Fapi.php%2Fapi%2FIm%2FaddIdentifier&identifier=im_13673982666&Toidentifier=im_13673982667 [运行时间：0.517065s][吞吐率：1.93req/s] [内存消耗：2,132.47kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Im',
+    2 => 'addIdentifier',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://192.168.0.110/api.php/api/Im/addIdentifier',
+  'identifier' => 'im_13673982666',
+  'Toidentifier' => 'im_13673982667',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Im->addIdentifier[ D:\phpStudy\WWW\APP\application\api\controller\Im.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

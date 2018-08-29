@@ -1,0 +1,69 @@
+<?php
+/**
+ * 用户登录操作
+ * 请求方式：post
+ * 接受参数：
+ * @param $username 用户名
+ * @param $pwd      加密密码     -- 可逆,同时定义一个加密规则
+ * @param $code     状态码
+ * return json
+ * {"code":int,"message":string,"data":array}
+ * 注意事项：
+ *
+ */
+
+	// session_start();
+	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Methods:GET,POST");
+	include_once ('../common/config.php');
+	include_once ('../common/response.php');
+	//连接数据库
+	if(!$conn){
+		echo "mysqli_erron()";
+	}
+		//验证用户信息
+		$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+		$pwd = isset($_POST['password']) ? md5($_POST['password']) : '';
+		function login($phone,$pwd,$conn){
+			if($phone !=='' || $pwd !== ''){
+                mysqli_set_charset($conn, "utf8");
+				$sql = "select id,phone,password from kq_login where phone = '{$phone}' and password = '{$pwd}'";  //查询登录用户的id phone password
+				$query = mysqli_query($conn,$sql);
+				$result = mysqli_fetch_array($query);
+				$end = "select pic,sex,username from kq_userinfo where uid = '{$result['id']}'";  //根据id  查询出详细信息
+				$query1 = mysqli_query($conn,$end);
+				$result1 = mysqli_fetch_array($query1);
+				if($result['phone'] || $result['pwd'])
+				{
+					$data = array(
+						'id' =>$result['id'],
+						'uid'=>$result['id'],
+						'username' =>$result1['username'],
+						'pic'=>$result1['pic'],
+						'sex'=>$result1['sex']
+					);
+					  $info =file_put_contents('userinfo.php',json_encode($data),TRUE); //把数组装换为json 格式存入文件
+
+					if(file_exists($info)){
+						$code = 1;
+						$message  = " succ";
+						$userinfo = array ('phone' => $result['phone'],'username' =>$result1['username']);
+						Response::user($code,$message,$userinfo);
+					}else{
+						$code = 0;
+						$message  = "filed";
+						$userinfo = array ('');
+						Response::user($code,$message,$userinfo);
+					}
+
+				}else
+				{
+					$code = 0;
+					$message  = "用户名和密码不正确!";
+					$userinfo = array ('');
+					Response::user($code,$message,$userinfo);
+				}
+			}
+		}
+		login($phone,$pwd,$conn);
+

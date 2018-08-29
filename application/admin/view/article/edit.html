@@ -1,0 +1,143 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">标题：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="标题" name="title" value="{$vo.title ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+       
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">描述：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="描述" name="description" value="{$vo.description ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+       <!--  <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">文章日期：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="文章日期" name="addtime" value="{$vo.addtime ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div> -->
+
+         <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">封面：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div id="drag" class="" title="" style="border: 0;">
+                    <label for="fileupload" title="点击上传">
+                        <button type="button" class="btn btn-default radius ml-20">点击上传</button>
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">预览图：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="hidden" name="pic" value="{$vo.pic ?? ''}">
+                <img class="yl-img" src="{$vo.pic ?? ''}" style="max-height: 200px; max-width: 200px;">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">类型：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="类型" name="keyword" value="{$vo.keyword ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">状态：</label>
+            <div class="formControls col-xs-6 col-sm-6 skin-minimal">
+                <div class="radio-box">
+                    <input type="radio" name="status" id="status-1" value="1">
+                    <label for="status-1">启用</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="status" id="status-0" value="0">
+                    <label for="status-0">禁用</label>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+         <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">内容：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" style="display: none"  placeholder=""  onKeyUp="textarealength(this, 100)">{$vo.content ?? ''}</textarea>
+                <!-- <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p> -->
+                <!-- 加载编辑器的容器 -->
+                <script id="container" name="content" type="text/plain">{$vo.content ?? ''}</script>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container',{
+            initialFrameHeight:500,
+        });
+    </script>
+<script>
+    $(function () {
+        $("[name='status'][value='{$vo.status ?? ''}']").prop("checked", true);
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+
+        layui.use('upload', function(){
+          var upload = layui.upload;
+            
+          //执行实例
+          var uploadInst = upload.render({
+            elem: '#drag' //绑定元素
+            ,url: '{:\\think\\Url::build("api/upload/upload_file_img")}' //上传接口
+            ,done: function(res){
+              //上传完毕回调
+                if(res.code == 1){
+                    $('.yl-img').attr('src',res.data);
+                    $('input[name="pic"]').val(res.data);
+                }
+            }
+            ,error: function(){
+              //请求异常回调
+            }
+          });
+        });
+    })
+</script>
+{/block}

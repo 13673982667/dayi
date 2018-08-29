@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>长路APP医师登录平台</title>
+    <meta name="author" content="DeathGhost" />
+    <link rel="stylesheet" type="text/css" href="../common/css/style.css" />
+    <style>
+        body{height:100%;background:#16a085;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+    <script src="../common/js/jquery.js"></script>
+    <script src="../common/js/verificationNumbers.js"></script>
+    <script src="../common/js/Particleground.js"></script>
+    <script>
+        $(document).ready(function() {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#00a6ac',
+                lineColor: '#00a6ac'
+            });
+            //验证码
+            // createCode();
+            //测试提交，对接程序删除即可
+            // $(".submit_btn").click(function(){
+            //   location.href="index.html";
+            //   });
+        });
+    </script>
+</head>
+<body>
+<dl class="admin_login">
+    <dt>
+        <strong>医师登录系统</strong>
+        <em>Management System</em>
+    </dt>
+    <dd class="user_icon">
+        <input type="text" placeholder="账号" name="username" id="username" class="login_txtbx"/>
+    </dd>
+    <dd class="pwd_icon">
+        <input type="password" placeholder="密码" name="userpwd" id="userpwd" class="login_txtbx"/>
+    </dd>
+    <dd class="val_icon">
+        <div class="checkcode" style="width: 218px;height:46px;background: #5CBDAA">
+            <input type="text" id="codetext" placeholder="验证码" maxlength="4"  class="login_txtbx" value="">
+            <img src="../admin/code.php" onclick="Code()" id="img">
+        </div>
+        <input type="button" value="验证码校验" class="ver_btn" id="codetest" >
+    </dd>
+    <dd>
+        <input type="button" value="立即登陆" id= "login_btn" class="submit_btn"/>
+    </dd>
+    <dd>
+        <a href="./doctor_register.html">医师注册 ?</a>
+        <!-- <input type="button" value="" id= "login_btn" class="submit_btn"/> -->
+    </dd>
+    <dd>
+</dl>
+</body>
+<script>
+
+    function Code() {
+        document.getElementById("img").src="../admin/code.php?"+Math.random();
+    }
+    $(document).ready(function(){
+
+        $("#login_btn").click(function () {
+            var username = $("#username").val();
+            var password = $("#userpwd").val();
+            var code = $("#codetext").val();
+            // alert(password);
+            if(username !==null && password !==null && code !==null){
+                $.ajax({
+                    type:'POST',
+                    url:"../admin/test.php",
+                    async:false,
+                    data:{code:code},
+                    success:function (data) {
+                        var tt = data;
+                        if(tt == 0){
+                            alert("验证码错误");
+                            return;
+                        }else if(tt == 1){
+                            $.ajax({
+                                type: "POST",
+                                async: false,
+                                url: "../admin/chkdoctor.php",
+                                data: { username: username, password: password ,code:code},
+                                success: function(data){
+                                    console.log(data);
+                                    var qq=data;
+                                    if(qq == 3) {
+                                        alert("用户名不合法");
+                                        return;
+                                    }else if(qq ==2){
+                                        alert("用户名或密码错误");
+                                        return;
+                                    }else if(qq == 1){
+                                        alert("登录成功");
+                                        window.location.href = 'shops_index.php';
+                                    }
+                                }
+
+                            })
+                        }
+                    }
+
+                })
+            }
+
+        })
+
+    })
+
+</script>
+</html>

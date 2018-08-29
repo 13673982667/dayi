@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+</head>
+<body>
+<table border="1px"  align="center" cellspacing="0" width="860" height="220" >
+    <tr>
+        <th colspan="4">文章发布系统(文章列表)</th>
+    </tr>
+    <tr style="text-align: center">
+        <td>文章编号</td>
+        <td>文章标题</td>
+        <td>文章简介</td>
+        <td>文章内容</td>
+    </tr>
+    <?php
+         header('content-type:text/html;charset=utf-8');
+    //验证数据库连接
+    include_once ('conn.php');
+    if(!$conn){
+        echo "error";
+    }
+    //接收数据
+    $id = 4;
+    mysqli_set_charset($conn,'utf8');
+    $sql = "select * from article ";
+    $query= mysqli_query($conn,$sql);
+    $val = array();
+    while( $res= mysqli_fetch_assoc($query)){
+        $val[] = $res;
+};
+
+    ?>
+        <tr style="text-align: center">
+            <td><?php echo $val['id']?></td>
+            <td><?php echo $val['title']?></td>
+            <td><?php echo $res['decsrption']?></td>
+            <td><?php echo $res['content']?></td>
+        </tr>
+
+
+
+
+</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 72925
+ * Date: 2017/12/12
+ * Time: 14:47
+ * order: 退出登录
+ */
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods:GET,POST");
+header('content-type:text/html;charset=utf-8');
+include_once ('../common/response.php');
+
+$outlogin = isset($_POST['outlogin']) ? $_POST['outlogin'] :'error';
+
+if($outlogin && $outlogin !='error'){
+    $userinfo = './userinfo.php';
+    $param = './param.php';
+    if (file_exists($userinfo )) {
+        if(unlink($userinfo) == TRUE){
+            $code = 1;
+            $message = "缓存清除成功，已安全退出！";
+            $tmp = array('');
+            response::user($code, $message, $tmp);
+
+        }
+
+    }else{
+        if(unlink($userinfo) == TRUE){
+            $code = 1;
+            $message = "缓存清除成功，已安全退出！";
+            $tmp = array('');
+            response::user($code, $message, $tmp);
+        }
+
+    }
+
+
+
+
+}

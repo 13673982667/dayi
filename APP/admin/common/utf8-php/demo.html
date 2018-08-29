@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor d测试</title>
+    <script type="text/javascript" src="ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+</head>
+
+<body>
+<form action="test.php" method="post">
+<table border="1px" width="960px" height="660px" align="center">
+    <th>文章发布系统(添加文章)</th>
+
+
+        <tr>
+            <td>
+                文章标题：<input type="text" name="title" value="" style="width:440px;"></br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                文章简介：<input type="text" name="decsrption" value="" style="width:440px;"></br>
+            </td>
+
+        </tr>
+        <tr>
+           <td>
+               文章详情：<textarea name="content" id="container" cols="80" rows="40" ></textarea>
+           </td>
+        </tr>
+        <tr >
+            <td><input type="submit"  name="提交" value="提交" style="width:960px; height:40px; background: #7aba7b"></td>
+        </tr>
+
+</table>
+</form>
+<script type="text/javascript">
+    var ue = UE.getEditor('container').getContent();
+    // UE.getEditor('editor').getContent()
+</script>
+</body>
+
+</html>

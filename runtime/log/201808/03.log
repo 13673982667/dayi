@@ -1,0 +1,704 @@
+[ 2018-08-03T09:04:15+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：1.140066s][吞吐率：0.88req/s] [内存消耗：1,355.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\APP\application\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-03T09:04:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.020600s][吞吐率：48.54req/s] [内存消耗：1,356.35kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\APP\application\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-03T09:04:24+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.491028s][吞吐率：2.04req/s] [内存消耗：1,338.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '?'[D:\phpStudy\WWW\APP\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:04:31+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.018600s][吞吐率：53.76req/s] [内存消耗：1,338.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '?'[D:\phpStudy\WWW\APP\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:04:32+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,338.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '?'[D:\phpStudy\WWW\APP\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:04:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.019601s][吞吐率：51.02req/s] [内存消耗：1,338.53kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:05:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,338.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '?'[D:\phpStudy\WWW\APP\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:16:05+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,339.01kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:10]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:16:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,339.00kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:10]
+
+---------------------------------------------------------------
+[ 2018-08-03T09:16:24+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php
+[ log ] 127.0.0.1/api.php [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,339.00kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:10]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:16:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/
+[ log ] 127.0.0.1/api.php/ [运行时间：0.292017s][吞吐率：3.42req/s] [内存消耗：1,339.39kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:10]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:16:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.374021s][吞吐率：2.67req/s] [内存消耗：5,028.55kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.122006s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:16:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：5,028.45kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:20:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.402023s][吞吐率：2.49req/s] [内存消耗：5,028.49kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.066004s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:20:13+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：5,028.49kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:20:29+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：5,028.49kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:20:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：5,028.49kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1130]SQLSTATE[HY000] [1130] Host 'PC-20090101LEWN' is not allowed to connect to this MySQL server[D:\phpStudy\WWW\APP\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:21:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/
+[ log ] 127.0.0.1/api.php/admin/ [运行时间：0.310018s][吞吐率：3.23req/s] [内存消耗：5,045.97kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.011001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.265015s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035002s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_web_log_all` [ RunTime:0.074005s ]
+[ sql ] [ SQL ] INSERT INTO `kq_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(61.0)' , 'http://127.0.0.1/api.php/admin/' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1533280878) [ RunTime:0.022001s ]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:21:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/admin/pub/login.html
+[ log ] 127.0.0.1/api.php/admin/pub/login.html [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：5,049.34kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ D:\phpStudy\WWW\APP\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\APP./application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=192.168.0.110;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kq_web_log_all` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] INSERT INTO `kq_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(61.0)' , 'http://127.0.0.1/api.php/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1533280879) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-03T15:21:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api.php/captcha.html
+[ log ] 127.0.0.1/api.php/captcha.html [运行时间：0.384022s][吞吐率：2.60req/s] [内存消耗：1,300.56kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/api.php/admin/pub/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; _pk_id.1.dc78=1545e201a7a70540.1526892425.1.1526892890.1526892425.; UM_distinctid=163affc7d05c2-03b44a3a95719a-46514133-1fa400-163affc7d07311; CNZZDATA5133446=cnzz_eid%3D731177138-1527664191-%26ntime%3D1527664191; Hm_lvt_1af382081d6b4b9fc610c4df9c51a95b=1527665950; Hm_lvt_d4c63618ad27be8f818e4fa9e86fe726=1527666013; _ga=GA1.1.316614368.1527666013; Hm_lvt_935fbf0ceb04a31feea33ba1b481978b=1527666119; PHPSESSID=oj4dmn8uo2q1mlml39u8cv1at4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\APP\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-03T15:31:11+08:00 ] 192.168.0.110 192.168.0.107 GET /api.php
+[ log ] 192.168.0.110/api.php [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,338.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\APP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.110',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'en-GB,en;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '='[D:\phpStudy\WWW\APP\application\index\controller\Index.php:10]
+
+---------------------------------------------------------------

@@ -1,0 +1,68 @@
+<?php
+/**
+ * 用户注册操作
+ * 请求方式：post
+ * 接受参数：
+ *  $username  用户名
+ *  $pwd       加密密码     -- 可逆,同时定义一个加密规则
+ *  $codes     状态码
+ * return json
+ * {"code":int,"message":string,"data":array}
+ * 注意事项：
+ *
+ *
+ */
+	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Methods:GET,POST");
+	
+	include_once ('../common/config.php');
+	include_once ('../common/response.php');
+
+	if(!$conn){
+		echo "mysqli_erron()";
+	}
+
+	$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+	$pwd = isset($_POST['password']) ? md5($_POST['password']) : '';
+	$codes = isset($_POST['code']) ? md5($_POST['code']) : '';
+	// function register($phone,$pwd,$conn,$codes){                              
+		if($phone !== '' &&  $pwd !== '' && $codes !=''){
+			mysqli_set_charset($conn, "utf8");
+			$querysql = "select phone,password from kq_login where phone = '{$phone}' and password= '{$pwd}'";
+			$res = mysqli_query($conn,$querysql);
+			$row = mysqli_fetch_assoc($res);
+			if($row['phone']){
+				$code = 0;
+				$message = "reged！";
+				$data = array();
+				response::user($code,$message,$data);
+			}else{  //在login表中注册手机号并且在userinfo中匹配到相对应的用户名
+				$sql = "insert into kq_login (phone,password,token) values ('{$phone}','{$pwd}','{$codes}')"; //login 中注册手机号码和密码
+                $res1 = mysqli_query($conn,$sql);
+                $row1 = mysqli_affected_rows($conn);
+                // echo $row1;
+                //插入数据成功返回受影响行数1;
+                if($row1>0){
+                	//查询出最新数据的ID；
+                	$sqlid = "select id from kq_login where phone ='{$phone}'";
+                	$res2 = mysqli_query($conn,$sqlid);
+                    $row2 = mysqli_fetch_array($res2);  //获取到uid
+                    $uid = $row2['id'];
+                    $username =substr($phone,-4).'客官'; //随机创立用户名
+                    $sex = 1;//（默认为男）；
+                    $pic = "http://www.63218860.com/APP/home/MyFiles/20171130022127.jpeg";
+                    $insertsql = "insert into kq_userinfo (uid,username,sex,pic) values ('{$uid}','{$username}','{$sex}','{$pic}')";
+                    mysqli_query($conn, $insertsql);
+                    $row3 = mysqli_affected_rows($conn);
+                    if($row3>0){
+                    	  $code = 1;
+                          $message = "reg succ";
+                          $username = substr($phone,-4).'YY';
+                          $data = array('phone'=>$phone,'username'=>$username,'pic'=>$pic,'sex'=>$sex);
+                          response::user($code,$message,$data);
+                 	}
+                }
+			}
+		}
+	// }
+	// register($phone,$pwd,$conn,$codes)

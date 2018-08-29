@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 72925
+ * Date: 2017/12/11
+ * Time: 10:57
+ * order:验证手机号码并发送短信验证码
+ */
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods:GET,POST");
+header('content-type:text/html;charset=utf-8');
+include_once ('../common/config.php');
+include_once ('../common/response.php');
+include_once ('./function.php');
+
+
+if($conn != ''){
+    echo mysqli_errno($conn);
+}
+
+$phone = isset($_POST['phone'])? $_POST['phone'] :'';
+$A = json_decode(file_get_contents('./userinfo.php'),TRUE);
+$sql = "select phone from kq_login where id = {$A['id']}";
+$query =  mysqli_query($conn,$sql);
+$result =  mysqli_fetch_array($query);
+$oldphone = $result['phone'];
+
+
+
+if($phone !== '' &&  $phone == $oldphone){
+    $code = 102;
+    $message = "edit filed";
+    $data = array();
+    response::user($code,$message,$data);
+}else{
+    phone($phone);
+    $code = 0;
+    $message = "phone send successful";
+    $data = array();
+    response::user($code,$message,$data);
+}
+

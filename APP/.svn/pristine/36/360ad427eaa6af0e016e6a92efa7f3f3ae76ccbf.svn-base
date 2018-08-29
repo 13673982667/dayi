@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>更换密码</title>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <script src="./jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<H1>更换密码</H1>
+
+<body>
+<!--<a href="tel:15162542562″>拨打电话</a>-->
+<form  >
+    <!--<input name="upfile" type="file"><BR>-->
+    <!--<input type="text" name="phone" value=""></br>-->
+    <li>
+        <p>当前密码</p>
+        <input type="password" name="password" id="" value="" />
+    </li>
+    <li>
+        <p>新密码</p>
+        <input type="password" name="newpassword" id="" value="" />
+    </li>
+    <li>
+        <p>确认新密码</p>
+        <input type="password" name="repassword" id="" value="" />
+    </li>
+    <li>
+        <p>密码长度至少6个字符</p>
+    </li>
+    <li>
+        确定
+    </li>
+    <button><input id="btnSendCode" type="button" value="提交"></button>
+
+</form>
+<table>
+    <tr><td>  ios系统 苹果打电话和短信测试</td></tr>
+    <tr>
+        <td><li><a href="tel:15701610661">157*****661</a></li></td>
+    </tr>
+    <tr>
+        <td><li> <a href="sms:15701610661">给157*****661发送短信</a></li></td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr><td> Android打电话和短信测试</td></tr>
+    <tr>
+        <td><li><a href="wtai://wp/mc;18790018021">18790018021</a></li></td>
+    </tr>
+    <tr>
+        <td><li> <a href="sms:15701610661">给157*****661发送短信</a></li></td>
+    </tr>
+
+</table>
+复制代码
+</body>
+<script>
+
+    $(function(){
+        $("#btnSendCode").click(function(){
+
+
+                password = $("input[name='password']").val();
+                newpassword = $("input[name='newpassword']").val();
+                repassword = $("input[name='repassword']").val();
+                alert(password);alert(newpassword);alert(repassword);
+                $.ajax({
+                url:'http://www.63218860.com/APP/home/editpassword.php',
+                type:'POST',
+                data:{ password:password,repassword:repassword},
+                async:'false',
+                success:function(date){
+                    console.log(11);
+                    alert(date);
+                }
+            })
+
+                return false;
+
+            })
+    });
+
+</script>
+</html>
